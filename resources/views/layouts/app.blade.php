@@ -4,7 +4,10 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Hostinza - Index Ten</title>
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,16 +16,18 @@
 
     <link rel="icon" type="image/png" href="favicon.ico">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" />
-
+    
+    <!-- Scripts -->
+    <script src="{{ asset('js/app.js') }}" defer></script>
 </head>
 
 <body>
-    <div class="body">
-        @include('layout.menu')
+    <div class="body" id="app">
+        @include('layouts.menu')
         <!-- Page Content -->
         @yield('content')
         <!-- End Page Content -->
-        @include('layout.footer')
+        @include('layouts.footer')
     </div>
 </body>
 

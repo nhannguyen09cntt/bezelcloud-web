@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6558f74828bca9ebecac73d90cea4b1a",
+    "content-hash": "c9a0de3d7983d609958eabe4087cdb05",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -644,6 +644,49 @@
             "time": "2019-07-01T23:21:34+00:00"
         },
         {
+            "name": "iddqdby/phponeapi",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/iddqdby/phponeapi.git",
+                "reference": "89b10f00be2e0880369859fc1da27e67c1f9c600"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/iddqdby/phponeapi/zipball/89b10f00be2e0880369859fc1da27e67c1f9c600",
+                "reference": "89b10f00be2e0880369859fc1da27e67c1f9c600",
+                "shasum": ""
+            },
+            "require": {
+                "phpxmlrpc/phpxmlrpc": "^4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PHPOneAPI\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sergey Protasevich",
+                    "email": "sergey.p@gmx.com"
+                }
+            ],
+            "description": "OpenNebula XML-RPC API Client",
+            "homepage": "https://github.com/iddqdby/phponeapi",
+            "keywords": [
+                "OpenNebula",
+                "api",
+                "client",
+                "xml-rpc"
+            ],
+            "time": "2016-06-16T20:43:07+00:00"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "v0.2",
             "source": {
@@ -945,6 +988,61 @@
                 "psysh"
             ],
             "time": "2020-03-17T15:34:59+00:00"
+        },
+        {
+            "name": "laravel/ui",
+            "version": "v2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/ui.git",
+                "reference": "47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/ui/zipball/47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83",
+                "reference": "47a0a1dac76f5e73803c86e1f38b2c7e0ae7fa83",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/console": "^7.0",
+                "illuminate/filesystem": "^7.0",
+                "illuminate/support": "^7.0",
+                "php": "^7.2.5"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Ui\\UiServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Ui\\": "src/",
+                    "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel UI utilities and presets.",
+            "keywords": [
+                "laravel",
+                "ui"
+            ],
+            "time": "2020-03-03T20:16:46+00:00"
         },
         {
             "name": "league/commonmark",
@@ -1467,6 +1565,57 @@
                 "type"
             ],
             "time": "2019-12-15T19:35:24+00:00"
+        },
+        {
+            "name": "phpxmlrpc/phpxmlrpc",
+            "version": "4.4.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/gggeek/phpxmlrpc.git",
+                "reference": "9b400d2c102f2a55839af8f73279274ebe148526"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/gggeek/phpxmlrpc/zipball/9b400d2c102f2a55839af8f73279274ebe148526",
+                "reference": "9b400d2c102f2a55839af8f73279274ebe148526",
+                "shasum": ""
+            },
+            "require": {
+                "ext-xml": "*",
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "codeclimate/php-test-reporter": "dev-master",
+                "docbook/docbook-xsl": "~1.78",
+                "ext-curl": "*",
+                "ext-mbstring": "*",
+                "indeyets/pake": "~1.99",
+                "phpunit/phpunit": ">=4.0.0, <6.0.0",
+                "phpunit/phpunit-selenium": "*",
+                "sami/sami": "~3.1"
+            },
+            "suggest": {
+                "ext-curl": "Needed for HTTPS and HTTP 1.1 support, NTLM Auth etc...",
+                "ext-mbstring": "Needed to allow reception of requests/responses in character sets other than ASCII,LATIN-1,UTF-8",
+                "ext-zlib": "Needed for sending compressed requests and receiving compressed responses, if cURL is not available"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "PhpXmlRpc\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "A php library for building xmlrpc clients and servers",
+            "homepage": "http://gggeek.github.io/phpxmlrpc/",
+            "keywords": [
+                "webservices",
+                "xmlrpc"
+            ],
+            "time": "2020-03-04T10:26:33+00:00"
         },
         {
             "name": "psr/container",
